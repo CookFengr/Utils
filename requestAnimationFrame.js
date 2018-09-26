@@ -1,4 +1,5 @@
 const VENDORS = ['webkit', 'moz', 'ms', '0']
+let lastTime = 0
 
 for (let v = 0; v < VENDORS.length && !window.requestAnimationFrame; v++) {
     if (window[VENDORS[v] + 'RequestAnimationFrame']) {
